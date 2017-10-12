@@ -13,7 +13,21 @@
       </div>
       <button class="addoption">Add</button>
     </div>
+    <div class="resultsection"></div>
     <button class="next">Hit me!</button>
     <img><img src="http://www.myguttellsme.com/uploads/6/8/3/6/6836599/1885233_orig.png" alt="challenge picture"></img>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultsection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addoption').click(add_option)
+      })
+    </script>
   </body>
 </html>
